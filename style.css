@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 510px;
+  margin: 0 auto;
+  color: hsl(234, 12%, 34%);
+}
+
+header .light_header {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1250px;
+  margin-top: 60px;
+}
+
+.box {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  margin: 30px 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box p {
+  margin-bottom: 70px;
+}
+
+.box img {
+  display: block;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.red::after {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.cyan::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.orange::after {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.blue::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.toPush {
+  transform: translateY(50%);
+}
+
+@media (max-width: 775px) {
+  .toPush {
+    transform: translateY(0);
+  }
+}
